@@ -1,0 +1,29 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <input type="number" placeholder="Pick a Number for the Game of Thrones Book">
+            <button class="search">Search</button>
+        </form>
+        <script id="bookTemplate" type="text/x-handlebars-template">
+            <div id="info">{{info}}</div>
+        </script>
+        <div class="bookContainer">Pick a Number</div>
+        <div class="book-contents">
+            <div class="name"></div>
+            <div class="authors"></div>
+            <div class="number"></div>
+        </div>
+    </div>
+
+</body>
+<script src="node.js"></script>
+</html>
